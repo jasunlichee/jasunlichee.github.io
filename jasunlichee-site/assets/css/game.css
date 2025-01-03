@@ -1,0 +1,47 @@
+.game-embed iframe {
+    width: 130%;
+    height: 645px;
+    -webkit-transform:scale(0.769);
+    -moz-transform:scale(0.769);
+    -o-transform:scale(0.769);
+    transform:scale(0.769);
+    margin-left: -15%;
+    margin-top: -5%;
+  }
+
+  .link-bubble {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem; /* Adjust padding for bubble size */
+    background-color: #f1f1f1; /* Light gray background color */
+    border-radius: 30px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Text color */
+    transition: background-color 0.3s ease; 
+  }
+  
+  .link-bubble:hover {
+    background-color: #ADD8E6; /* Change color on hover */
+    color: #fff; /* White text on hover */
+  }
+
+  .post-links {
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    margin-bottom: 1 rem;
+  }
+  
+  .post-links a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .post-links .icon {
+    width: 24px;
+    height: 24px;
+  }

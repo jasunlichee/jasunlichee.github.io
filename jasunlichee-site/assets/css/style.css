@@ -1,0 +1,59 @@
+/* Ensure overall styling for the bio container */
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Center content and limit width */
+  }
+  
+  /* Top section: Grid layout for text and image */
+  .bio-top {
+    display: grid;
+    grid-template-columns: 1fr auto; /* Text takes most of the space; image auto-sizes */
+    align-items: center;
+    gap: 20px; /* Space between text and image */
+  }
+  
+  /* Styling for text */
+  .bio-text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Styling for the image */
+  .bio-image img {
+    max-width: 200px; /* Restrict maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+  }
+  
+  /* Bottom section for additional text */
+  .bio-bottom {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .bio-top {
+      grid-template-columns: 1fr; /* Stack text and image */
+      text-align: center;
+    }
+  
+    .bio-image img {
+      margin: 0 auto;
+    }
+  }
+
+  .resume-container {
+    width: 100%; /* Full width of the page */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .resume-container embed {
+    width: 100%; /* Make the embedded PDF take full width */
+    height: 1010px; /* Adjust the height to your preference */
+    border: none; /* Remove any border */
+  }
+  

@@ -1,0 +1,61 @@
+---
+layout: post
+title:  "Thrifty"
+date:   2024-11-21 20:59:18 -0800
+excerpt: "After realizing that I constantly inadvertently spend over my desired monthly budget, I decided to develop a personalized budgeting app to keep myself and my users in check. With Thrifty, you can track your spending, set budgets, and organize your expenses effortlessly. Whether you’re saving for the future or just trying to cut down on unnecessary expenses, Thrifty helps you stay on top of every dollar you spend. Take control of your finances with Thrifty today."
+
+photos:
+    - /assets/images/thrifty/671.png
+    - /assets/images/thrifty/672.png
+    - /assets/images/thrifty/673.png
+    - /assets/images/thrifty/674.png
+
+links:
+    - name: "App Store"
+      url: "https://apps.apple.com/us/app/thrifty/id6738317527"
+      icon: "/icons/app-store-icon.png"
+    - name: "GitHub"
+      url: "https://github.com/jasunlichee/ThriftyApp"
+      icon: "/icons/github-icon.png"
+    - name: "Website"
+      url: "https://thrifty07.wordpress.com/"
+      icon: "/icons/thrifty-icon.png"
+
+tags:
+    - "ios"
+    - "swift"
+    - "app"
+    - "finance"
+    - "productivity"
+
+---
+# Overview
+
+After realizing that I constantly inadvertently spend over my desired monthly budget, I decided to develop a personalized budgeting app to keep myself and my users in check. With Thrifty, you can track your spending, set budgets, and organize your expenses effortlessly. Whether you’re saving for the future or just trying to cut down on unnecessary expenses, Thrifty helps you stay on top of every dollar you spend. Take control of your finances with Thrifty today.
+
+
+# Features:
+
+Set Your Monthly Budget: Start each month with a clear financial goal in mind.
+
+Track Your Purchases: Add each purchase as you go, and watch your spending update in real time.
+
+Organize with Categories: Keep your finances simple and clear with six helpful categories:
+
+- Travel: Capture all your vacation and trip expenses.
+
+- Transport: From gas to rideshares, track your commutes.
+
+- Leisure: Movies, hobbies, and fun nights out, all in one place.
+
+- Dining: Stay mindful of your restaurant and café bills.
+
+- Groceries: Keep tabs on your essential food shopping.
+
+- Monthly Subscriptions: Never lose track of those recurring charges!
+
+# Technical:
+
+I mainly used Swift and XCode to develop Thrifty. For user data, I integrated user login with email, Google, and Apple and stored the data in the cloud using Firebase Thorough testing of my app was done through TestFlight, where I gathered user feedback over 2 weeks to ensure a bug-free app upon launch.
+
+To here to see my initial mockup, download here: [Download PDF](/assets/pdf/thrifty.pdf)
