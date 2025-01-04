@@ -9,11 +9,11 @@ links:
       url: "https://chromewebstore.google.com/detail/trackerpro/ommpiefnngepapcbfpjflaekdheahhek"
       icon: "/icons/chrome-web.png"
 
-photos:
+gallery:
     - /assets/images/tracker/00.png
     - /assets/images/tracker/01.png
     - /assets/images/tracker/02.png
-
+    - /assets/images/tracker/03.png
 tags:
     - "chrome"
     - "extension"

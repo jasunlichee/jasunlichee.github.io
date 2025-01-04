@@ -14,6 +14,12 @@ links:
 
 game: "/assets/games/Wordle-2/index.html"
 
+gallery:
+    - /assets/images/wordle2/00.png
+    - /assets/images/wordle2/01.png
+    - /assets/images/wordle2/02.png
+    - /assets/images/wordle2/03.png
+
 tags:
     - "unity"
     - "game"
@@ -23,3 +29,23 @@ tags:
     - "itch.io"
 
 ---
+
+# Overview
+
+I loved the original Wordle, and wondered how much more challenging a 6 letter Wordle game would be. I decided to try my take on the classic Wordle game with Wordle 2. In this version, the challenge is bumped up with 6-letter words, making each puzzle more exciting and engaging. The best part? You're allowed to play more than just one game per day. If you think you've mastered Wordle, try Wordle 2 and take on the 6-letter challenge.Created by me using Unity and C#, with the graphics provided by Vivian Huynh.
+
+# Game Description
+
+- Type letters using your keyboard, with backspace and enter supported
+
+- Click on each letter using your mouse
+
+- Submitted word must be valid (a real word)
+
+- 8 guesses as opposed to the original Wordle's 6
+
+- Option to start a new game by pressing the green 2 in the title.
+
+- Green means right location, yellow means wrong location, gray means letter does not exist.
+
+- Play as many times as you'd like!

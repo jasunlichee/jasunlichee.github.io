@@ -4,8 +4,11 @@ title:  "SpotifyBot"
 date:   2023-03-16 20:59:18 -0800
 excerpt: "After realizing that Spotify shuffle constantly repeats songs, I developed a web application that takes Spotify shuffling to the next level, offering complete randomization and custom playlist creation. With this tool, every click generates a fully randomized queue from your selected playlist. It clears the queue before adding new songs, ensuring a new experience every time. If you're feeling nostalgic, you can also create personalized playlists of your top tracks from various time ranges."
 
-photos:
+gallery:
     - /assets/images/spotifybot/00.png
+    - /assets/images/spotifybot/01.png
+    - /assets/images/spotifybot/02.png
+    - /assets/images/spotifybot/03.png
 
 links:
     - name: "GitHub"

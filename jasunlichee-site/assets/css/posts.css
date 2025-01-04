@@ -7,7 +7,7 @@
   gap: 1vmin;
 }
 
-img {
+.post-photos img {
   --brightness: 1.00;
   transition: flex 0.4s;
   height: 100%;
@@ -68,4 +68,58 @@ img:hover {
     max-width: 100%; /* Ensure the video doesn't exceed the container's width */
     border-radius: 8px; /* Add rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+}
+
+
+:root {
+  --max-img-width: 100%;
+  --aspect-ratio-padding: 16/10;
+}
+
+.gallery img {
+  max-width: 100%;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+.gallery {
+  display: flex;
+  margin: 10px auto;
+  max-width: var(--max-img-width);
+  position: relative;
+  padding-top: var(--aspect-ratio-padding);
+}
+
+@media screen and (min-width: 600px) {
+  .gallery {
+    padding-top: 500px;
+  }
+}
+
+.gallery__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery__thumb {
+  display: block;
+  width: 100%; /* Reduce width to account for padding */
+  transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+.gallery__selector {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.gallery__selector:checked + .gallery__img {
+  opacity: 1;
+}
+
+.gallery__selector:checked ~ .gallery__thumb > img {
+  filter: brightness(0.5);
 }

@@ -5,7 +5,7 @@ layout: base
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/posts.css' | relative_url }}">
-  </head>
+</head>
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -42,13 +42,25 @@ layout: base
   {% endif %}
 
 
-{% if page.photos %}
+  {% if page.photos %}
   <section class="post-photos">
     <div class="container">
         {% for photo in page.photos %}
           <img src="{{ photo | relative_url }}" alt="Photo for {{ page.title }}">
         {% endfor %}
     </div>
+  </section>
+  {% endif %}
+
+  {% if page.gallery %}
+  <section class="gallery">
+    {% for image in page.gallery %}
+    <div class="gallery__item">
+      <input type="radio" id="img-{{ forloop.index }}" {% if forloop.first %}checked{% endif %} name="gallery" class="gallery__selector" />
+      <img class="gallery__img" src="{{ image }}" alt="Gallery image {{ forloop.index }}" />
+      <label for="img-{{ forloop.index }}" class="gallery__thumb"><img src="{{ image }}" alt=""/></label>
+    </div>
+    {% endfor %}
   </section>
   {% endif %}
 

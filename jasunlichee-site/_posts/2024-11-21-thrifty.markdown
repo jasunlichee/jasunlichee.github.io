@@ -5,10 +5,10 @@ date:   2024-11-21 20:59:18 -0800
 excerpt: "After realizing that I constantly inadvertently spend over my desired monthly budget, I decided to develop a personalized budgeting app to keep myself and my users in check. With Thrifty, you can track your spending, set budgets, and organize your expenses effortlessly. Whether you’re saving for the future or just trying to cut down on unnecessary expenses, Thrifty helps you stay on top of every dollar you spend. Take control of your finances with Thrifty today."
 
 photos:
-    - /assets/images/thrifty/671.png
-    - /assets/images/thrifty/672.png
-    - /assets/images/thrifty/673.png
-    - /assets/images/thrifty/674.png
+    - /assets/images/thrifty/02.png
+    - /assets/images/thrifty/01.png
+    - /assets/images/thrifty/04.png
+    - /assets/images/thrifty/05.png 
 
 links:
     - name: "App Store"

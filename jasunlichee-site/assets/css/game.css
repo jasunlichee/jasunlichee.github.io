@@ -1,47 +1,99 @@
 .game-embed iframe {
-    width: 130%;
-    height: 645px;
-    -webkit-transform:scale(0.769);
-    -moz-transform:scale(0.769);
-    -o-transform:scale(0.769);
-    transform:scale(0.769);
-    margin-left: -15%;
-    margin-top: -5%;
-  }
+  width: 130%;
+  height: 645px;
+  -webkit-transform:scale(0.769);
+  -moz-transform:scale(0.769);
+  -o-transform:scale(0.769);
+  transform:scale(0.769);
+  margin-left: -15%;
+  margin-top: -5%;
+}
 
-  .link-bubble {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem 1rem; /* Adjust padding for bubble size */
-    background-color: #f1f1f1; /* Light gray background color */
-    border-radius: 30px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    color: #333; /* Text color */
-    transition: background-color 0.3s ease; 
-  }
-  
-  .link-bubble:hover {
-    background-color: #ADD8E6; /* Change color on hover */
-    color: #fff; /* White text on hover */
-  }
+.link-bubble {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem; /* Adjust padding for bubble size */
+  background-color: #f1f1f1; /* Light gray background color */
+  border-radius: 30px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Text color */
+  transition: background-color 0.3s ease; 
+}
 
-  .post-links {
-    display: flex;
-    justify-content: left;
-    gap: 1rem;
-    margin-bottom: 1 rem;
+.link-bubble:hover {
+  background-color: #ADD8E6; /* Change color on hover */
+  color: #fff; /* White text on hover */
+}
+
+.post-links {
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+}
+
+.post-links a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.post-links .icon {
+  width: 24px;
+  height: 24px;
+}
+
+
+:root {
+  --max-img-width: 100%;
+  --aspect-ratio-padding: 16/10;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.gallery {
+  display: flex;
+  margin: 10px auto;
+  max-width: var(--max-img-width);
+  position: relative;
+  padding-top: var(--aspect-ratio-padding);
+}
+
+@media screen and (min-width: 600px) {
+  .gallery {
+    padding-top: 500px;
   }
-  
-  .post-links a {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1rem;
-  }
-  
-  .post-links .icon {
-    width: 24px;
-    height: 24px;
-  }
+}
+
+.gallery__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery__thumb {
+  display: block;
+  width: 100%; /* Reduce width to account for padding */
+  transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+.gallery__selector {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.gallery__selector:checked + .gallery__img {
+  opacity: 1;
+}
+
+.gallery__selector:checked ~ .gallery__thumb > img {
+  filter: brightness(0.5);
+}

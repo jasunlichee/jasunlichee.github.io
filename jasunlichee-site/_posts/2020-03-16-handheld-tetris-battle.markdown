@@ -6,6 +6,11 @@ excerpt: "My team and I designed and programmed a handheld Tetris game that brin
 
 video: /assets/videos/tetris.mp4
 
+links:
+    - name: "ECE 5"
+      url: "https://web.ece.ucsb.edu/~hespanha/ece5/"
+      icon: "/icons/ucsb-coe.png"
+
 tags:
     - "arduino"
     - "soldering"

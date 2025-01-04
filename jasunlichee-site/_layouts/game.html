@@ -48,11 +48,21 @@ layout: base
   </section>
   {% endif %}
 
-
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
 
+  {% if page.gallery %}
+  <section class="gallery">
+    {% for image in page.gallery %}
+    <div class="gallery__item">
+      <input type="radio" id="img-{{ forloop.index }}" {% if forloop.first %}checked{% endif %} name="gallery" class="gallery__selector" />
+      <img class="gallery__img" src="{{ image }}" alt="Gallery image {{ forloop.index }}" />
+      <label for="img-{{ forloop.index }}" class="gallery__thumb"><img src="{{ image }}" alt=""/></label>
+    </div>
+    {% endfor %}
+  </section>
+  {% endif %}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
