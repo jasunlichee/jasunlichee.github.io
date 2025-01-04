@@ -22,7 +22,8 @@ tags:
     - "python"
     - "spotify"
     - "api"
-    - "shuffling"
+    - "playlist"
+    - "flask"
     - "web-app"
 ---
 
