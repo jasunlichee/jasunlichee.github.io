@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "IEEE VR 26 Submission"
+date:   2025-09-12 20:59:18 -0800
+excerpt: "VR classroom study where GPT-4 peers ask contextual questions during lectures. In a study with 36 participants, AI questioning improved engagement, focus, and learning. Simulated peer inquiry in VR can replicate classroom dynamics and enhance online education at scale."
+
+video: /assets/videos/vr-lecture.mp4
+
+links:
+    - name: "HAX Lab"
+      url: "https://sites.cs.ucsb.edu/~sra/"
+      icon: "/icons/ucsb-coe.png"
+    - name: "GitHub"
+      url: "https://github.com/jasunlichee/VR-Classroom"
+      icon: "/icons/github-icon.png"
+    - name: "Website"
+      url: "https://ieeevr.org/2026/contribute/papers/"
+      icon: "/icons/ieee-icon.png"
+
+tags:
+    - "AI"
+    - "VR"
+    - "LLMs"
+    - "Unity"
+    - "Research"
+    - "IEEE"
+
+---
+# Overview
+
+Asynchronous online learning platforms such as Coursera and Khan Academy reach millions of learners but often lack the peer interactions that support engagement and comprehension in traditional classrooms. In this work, we developed a VR classroom where GPT-4-powered virtual peers pose contextual, domainrelevant questions during slide-based lectures. These AI-generated questions are strategically timed to prompt elaboration from the virtual instructor, simulating the benefits of peer inquiry. In a controlled study with 36 participants, we compared two conditions: VR lectures with and without AI questioning agents. Participants in the AI question-asking condition showed significantly higher engagement and focus with improved learning outcomes. These results suggest that simulated peer questioning in immersive VR environments can replicate key benefits of classroom social dynamics, offering a scalable path to enhance online education.
+
+
+# Results:
+
+The study demonstrates that AI-driven peer questioning in VR classrooms can meaningfully enhance both learning outcomes and the subjective classroom experience. Participants who attended lectures with virtual peers asking clarifying questions achieved higher quiz scores, reported greater engagement, and experienced stronger feelings of presence than those in a passive lecture condition. These results suggest that even simple, non-personalized peer interactions can replicate important aspects of active learning, pointing toward new opportunities for scalable, socially enriched online education. As VR and large language models continue to mature, integrating AI-mediated peers offers a promising path for designing immersive learning environments that balance accessibility with the cognitive and social benefits of classroom interaction.
+
+
+# Technical:
+The system is designed to generate real-time audio interactions in VR after each lecture slide, using the OpenAI API. After parsing slide text, a script constructs a prompt using the parsed information and generates an audio file using OpenAI for the virtual instructor. The response given by the instructor is passed back to OpenAI to generate a question that the virtual student can ask. The instructor then have an audio file generated in realtime as a response tothis question. This pipeline is intended to generalize across lecture materials, allowing any slide deck to be automatically transformed into an interactive VR lecture. In the full design, AI-driven peers can ask clarifying questions and the AI-driven instructor responds in real time. However, during pilot testing the model often produced verbose or filler-laden responses, substantially extending lecture duration. In addition, the peer questions varied across runs, introducing inconsistencies between sessions.
+
+To balance realism with experimental control, we modified the design. Our goals in constructing the VR classroom were threefold: (1) to create a realistic and distraction-free environment that supported a sense of co-presence, (2) to implement AI avatars and behaviors that modeled classroom dynamics such as listening, questioning, and note-taking, and (3) to control timing, voice, and animation so that interactions were consistent across participants. While our architecture supports both AI-driven peers and an AI-driven instructor who responds to their questions, for the user study we scripted and synchronized all interactions to maintain uniformity across conditions. These choices ensured both ecological validity for learners and the experimental control required for evaluation.
+
+To read the paper in its entirety, download here: [Download PDF](/assets/pdf/IEEE.pdf)
